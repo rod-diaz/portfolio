@@ -1,0 +1,134 @@
+/* Change the z-index to be in front of the particles*/
+/* nav {
+    z-index: 2;
+} */
+  
+.nav--background {
+    background: transparent;
+}
+
+nav a.nav-link {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    letter-spacing: 0.0375rem;
+    cursor: pointer;
+}
+
+nav ul li {
+    text-transform: uppercase;
+}
+  
+/*To change the background of the nav on scroll*/
+.navbar--active {
+    border-color: rgba(255, 255, 255, .5) !important;
+    background-color: #64485C!important;
+}
+
+.navbar-brand {
+    margin: 0;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem !important;
+    color: #edc951 !important; 
+    /* padding-left: 1.25rem;
+    padding-right: 1.25rem; */
+}
+
+/*Style of the items of the nav*/
+.navbar-nav > li > a {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    color: var(--primary-white) !important;
+    border-bottom: 3px solid var(--primary-black);
+}
+  
+/*Style of items when interaction happen*/
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
+    border-bottom: 0.1875rem solid var(--skin);
+}
+
+.navbar-nav > li > a:hover {
+    border-bottom: 0.1875rem solid var(--skin);
+    font-size: 1.2rem;
+}
+
+/*************************** Responsive *********************/
+
+
+/*************************991px**********************************/
+
+/*Center the menu items*/
+@media (min-width: 992px){
+    .navbar-nav.navbar-center {
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+}
+
+/*Align the brand with the menu items*/
+@media (max-width: 991px){
+    .navbar-brand {
+        margin-left: 2rem;
+    }
+}
+
+/*Put color to the navbar menu to avoid transparency*/
+@media (max-width: 991px){
+    .navbar-nav {
+        background-color: #64485C!important;
+        padding: 1.25rem 1.25rem 0.9375rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar .navbar-nav .nav-item .nav-link { 
+        /* color: #040c2c !important; */
+        /* color: aliceblue; */
+        display: inline-block;
+    }
+} 
+
+/*reduce padding of the navbar*/
+@media (max-width: 991px){
+    .navbar {
+        padding: 0 0.9375rem;
+    }
+}
+
+
+/*************************767px**********************************/
+
+/*Grab all the width to put navbar elements on the edges*/
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/*Max height to the collapsed menu*/
+@media (max-width: 767px){
+    .navbar-collapse {
+        max-height: 275px;
+        overflow-y: scroll;
+    }
+}
+
+/*Avoid blank space on the edges of the collapsed menu*/
+@media (max-width: 767px){
+    .navbar-collapse {
+        margin-left: -0.9375rem;
+        margin-right: -0.9375rem;
+    }
+}
+
+
+/*It Keeps the brand align with navbar items*/
+@media (max-width: 767px){
+    .navbar-brand {
+        margin-left: 1.25rem;
+    }
+}
+
+

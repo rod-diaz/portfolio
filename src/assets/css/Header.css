@@ -1,0 +1,115 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F5F5;
+    background-size: cover;
+    background-position: center center; 
+    transition: all .2s ease-in-out;
+    background-image: url("../images/laptop-1478822_1920.jpg");
+    animation: banner 21s infinite linear;
+}
+  
+.banner-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color:   #edc951;
+    background-color: rgba(22, 22, 22, .4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: "Indie Flower", sans-serif;
+}
+
+.banner-content h2, h5 {
+    text-align: center;
+    font-weight: 500; 
+    min-width: 100%;
+}
+  
+.banner-content h2 {
+    font-size: 4rem;
+} 
+
+.banner-content h5 {
+    font-size: 3rem;
+}
+
+@keyframes banner {
+    0%{
+        background-image: url("../images/office-381228_1920.jpg");
+    }
+    33%{
+        background-image: url("../images/office-381228_1920.jpg");
+    }
+    34%{
+       background-image: url("../images/home-office-1207834_1920.jpg"); 
+    }
+    67%{
+       background-image: url("../images/home-office-1207834_1920.jpg"); 
+    }
+    68%{
+       background-image: url("../images/laptop-1478822_1920.jpg"); 
+    }
+    100%{
+       background-image: url("../images/laptop-1478822_1920.jpg"); 
+    }
+} 
+
+  
+/*----------------TYPED TEXT---------------------*/
+  
+/*Style of the typed text*/
+.typed-text {
+    font-size: 2rem;
+    color: var(--primary-white);
+}
+  
+/*----------------PARTICLES JS---------------------*/
+  
+.tsparticles-canvas-el {
+    position: absolute;
+    height: 100vh;
+    width: 100vh;
+    z-index: 1; /*We want to particles being in front of the image*/
+}
+
+/*************************** Responsive *********************/
+
+
+@media (min-device-width: 300px) and (max-device-width: 767px) { 
+    .banner {  
+        animation: none;
+        background-size: 100% 100%;
+        background-image: url('../images/possessed-photography-zbLW0FG8XU8-unsplash.jpg');
+    }
+}
+
+/*************************500px**********************************/
+
+/*Avoid inserting break-line*/
+@media (max-width: 500px){
+    .banner-content h2 {
+        font-size: 2.8rem !important;
+    }
+}
+
+@media (max-width: 500px){
+    .banner-content h5 {
+        font-size: 2.4rem !important;
+    }
+}
+
+@media (max-width: 500px){
+    .banner-content span {
+        font-size: 1.8rem !important;
+    }
+}

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --primary-black: rgba(255, 255, 255, 0);
+  --skin: #f1c27d;
+}
+
+body {
+  font-family: "Indie Flower", sans-serif;
+  background-color: var(--primary-black);
+}
